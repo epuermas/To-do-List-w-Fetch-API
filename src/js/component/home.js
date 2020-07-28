@@ -11,6 +11,7 @@ export class Home extends React.Component {
 		};
 	}
 
+	// Add a task PUT
 	addListItems = e => {
 		let key = e.which || e.keyCode || 0;
 		if (key !== 13) {
@@ -42,6 +43,7 @@ export class Home extends React.Component {
 		}
 	};
 
+	// Delete a task PUT
 	deleteListItems = index => {
 		let updatedContacts = this.state.contacts;
 		updatedContacts[index].done = true;
@@ -66,6 +68,7 @@ export class Home extends React.Component {
 			.catch(error => console.error("Error:", error));
 	};
 
+	// Obtain data using username POST
 	updateUserName = e => {
 		let key = e.which || e.keyCode || 0;
 		if (key !== 13) {
@@ -96,6 +99,7 @@ export class Home extends React.Component {
 		}
 	};
 
+	// Rendering the to-do list
 	render() {
 		return (
 			<div className="fullPage">
