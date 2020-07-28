@@ -100,7 +100,7 @@ export class Home extends React.Component {
 		return (
 			<div className="fullPage">
 				<div className="header">
-					<h1>todos</h1>
+					<h1>To-do List</h1>
 				</div>
 				<div className="userNameChanger">
 					<div className="userNameLabel">

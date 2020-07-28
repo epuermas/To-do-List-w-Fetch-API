@@ -1,4 +1,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
+.fullPage {
+ margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 body {
   background: #f2f4f4;
@@ -10,7 +18,8 @@ body {
     text-align: center;
     font-size: 84px;
     font-weight: 300;
-    color: #d1c7db;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
 .userNameChanger {
@@ -20,20 +29,21 @@ body {
 }
 
 .userNameLabel {
-  margin-right: 7px;
+  margin-right: 9px;
 }
 
 .userNameLabel h3 {
   font-size: 20px;
-  color: #d1c7db;
+  color: white;
   font-weight: 600;
+  text-shadow: 2px 2px 4px black;
 }
 
 .container {
   width: 520px;
   margin: 0 auto;
   padding-bottom: 8px;
-  background: #d1c7db;
+  background: lightgray;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -59,9 +69,9 @@ li {
 }
 
 input#addItem {
-  background: #d1c7db;
+  background:lightgray;
   font-size: 24px;
-  color: #6d6b6d;
+  color: red;
   border: none;
   width: 100%;
   padding: 10px 10px 10px 20px;
