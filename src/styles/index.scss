@@ -1,13 +1,93 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+  background: #f2f4f4;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.header {
+    margin: 0 auto;
+    width: 520px;
+    text-align: center;
+    font-size: 84px;
+    font-weight: 300;
+    color: #d1c7db;
+}
 
-*/
+.userNameChanger {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.userNameLabel {
+  margin-right: 7px;
+}
+
+.userNameLabel h3 {
+  font-size: 20px;
+  color: #d1c7db;
+  font-weight: 600;
+}
+
+.container {
+  width: 520px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+  background: #d1c7db;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: 2em;
+  margin: 0;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  border: 0.25px solid #d4d6d8;
+  background: #f7f9f9;
+}
+
+.listItem {
+  color: #474647;
+}
+
+input#addItem {
+  background: #d1c7db;
+  font-size: 24px;
+  color: #6d6b6d;
+  border: none;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  box-sizing: border-box;
+}
+
+.flexItems {
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.deleter {
+  padding-right: 10px;
+}
+
+span {
+  color: #babcbc;
+  visibility: hidden;
+}
+
+li:hover span {
+  visibility: visible;
+}
+
+#counter {
+  font-size: 11px;
+  padding-left: 4px;
+  color: #918f91;
+}
