@@ -1,5 +1,6 @@
 import React from "react";
 
+// Create element
 export class Home extends React.Component {
 	constructor() {
 		super();
